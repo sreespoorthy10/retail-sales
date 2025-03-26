@@ -6,11 +6,12 @@ This project implements an ETL pipeline using the **Medallion Architecture** (Br
 ## Project Structure
 ```
 retail-sales/
-│── 01 - Data Ingest.ipynb                              # Code to ingest raw data and store it in Bronze layer
-│── 02 - Clean Data.ipynb                               # Cleans the dataset and stores it in Silver layer
-│── 03 - Data Transformation and Aggregation.ipynb/     # Transforms and aggregates the dataset and stores it in Gold layer
-│── 04 - Create Data Warehouse.ipynb                    # Dimensional model
-│── 05 - Metadata Management.ipynb                      # Metadata repository
+|── src
+  │── 01 - Data Ingest.ipynb                              # Code to ingest raw data and store it in Bronze layer
+  │── 02 - Clean Data.ipynb                               # Cleans the dataset and stores it in Silver layer; Also contains Data Quality Monitoring and Alerts scripts
+  │── 03 - Data Transformation and Aggregation.ipynb/     # Transforms and aggregates the dataset and stores it in Gold layer
+  │── 04 - Create Data Warehouse.ipynb                    # Dimensional model
+  │── 05 - Metadata Management.ipynb                      # Metadata repository
 │── README.md
 ```
 
@@ -24,6 +25,7 @@ The ETL pipeline follows these stages:
 ### 02 - Clean Data
 - Removes duplicates and handles missing values.
 - Saves cleaned data to the **Silver Layer** (`online_retail.silver.cleaned_data`).
+- Also contains Data Quality Monitoring and Alerts scripts.
 
 ### 03 - Data Transformation and Aggregation
 - Converts data types, standardizes formats, and calculates new columns.
