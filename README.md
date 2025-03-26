@@ -12,6 +12,7 @@ retail-sales/
   │── 03 - Data Transformation and Aggregation.ipynb/     # Transforms and aggregates the dataset and stores it in Gold layer
   │── 04 - Create Data Warehouse.ipynb                    # Dimensional model
   │── 05 - Metadata Management.ipynb                      # Metadata repository
+  │── pipeline_workflow.json                              # Pipeline to execute the notebooks in sequential order
 │── README.md
 ```
 
@@ -41,7 +42,7 @@ The ETL pipeline follows these stages:
 ![](/Volumes/online_retail/bronze/raw/online_retail_erd.JPG)
 draw.io link - [](/Volumes/online_retail/bronze/raw/online_retail_erd.drawio)
 
-### 5. Metadata Management
+### 05 - Metadata Management
 - Maintains `metadata.json` with row counts for each processing stage.
 
 ## Author
