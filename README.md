@@ -40,7 +40,8 @@ The ETL pipeline follows these stages:
 - Establishes relationships between tables for analytical queries.
 
 ![](/Volumes/online_retail/bronze/raw/online_retail_erd.JPG)
-draw.io link - [](/Volumes/online_retail/bronze/raw/online_retail_erd.drawio)
+
+draw.io link - `/Volumes/online_retail/bronze/raw/online_retail_erd.drawio`
 
 ### 05 - Metadata Management
 - Maintains `metadata.json` with row counts for each processing stage.
